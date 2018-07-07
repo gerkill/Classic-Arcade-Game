@@ -1,5 +1,6 @@
 # Classic-Arcade-Game
 GWG Udacity portfolio project #3
+
 This is a project from Udacity's Nanodegree program "Front-End Web Developer". The project is based on the arcade game 'Frogger' by Konami (https://en.wikipedia.org/wiki/Frogger)
 
 <b>To Run The Game</b>
