@@ -74,8 +74,7 @@ var Engine = (function(global) {
 	 * on the entities themselves within your app.js file).
 	 */
 	function update(dt) {
-		// Credit https://discussions.udacity.com/t/finite-state-machine-to-model-game-states/21955
-		// for Finite State Machine
+		
 		// Change game behavior according to game state
 		switch (currentGameState) {
 			case "startGame":
