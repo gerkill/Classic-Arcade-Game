@@ -5,9 +5,9 @@ This is a project from Udacity's Nanodegree program "Front-End Web Developer". T
 
 <b>To Run The Game</b>
 <p>Download this repository:
-Click download ZIP on the right of the screen, then extract the zip file to your computer, or clone the repository using git.
-Go to where you unzipped the file or cloned the repository.
-Double-click index.html to open the game in your browser.
+Click download ZIP on the right of the screen, then extract the zip file to your computer, or clone the repository using git.<br>
+Go to where you unzipped the file or cloned the repository.<br>
+Double-click index.html to open the game in your browser.<br>
 Follow the onscreen instructions.
 
 <b>Game Rules</b>
