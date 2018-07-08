@@ -124,14 +124,13 @@ Gem.prototype.collisionDetected = function() {
 	player.playerScore += 40;
 	this.wait();
 };
-// Call setTimeout in a function so we can assign it to a variable
-// Necessary for clearTimeout(gem.gemWaitTime) to work
+// Calls setTimeout in a function 
 Gem.prototype.wait = function() {
 	this.gemWaitTime = setTimeout(function() {
 		gem.gemReset(); // this.gemReset() doesn't work
 	}, 4000);
 };
-// Reset gem to a new location
+// Reset gem to a new position
 Gem.prototype.gemReset = function() {
 	"use strict";
 	// Gems appear at one of the following x positions: 0, 101, 202, 303, 404
@@ -139,7 +138,7 @@ Gem.prototype.gemReset = function() {
 	// Gems appear at one of the following Y positions: 60, 145, 230
 	this.y = (60 + (85 * Math.floor(Math.random() * 3) + 0));
 };
-// Hearts the player should try to get
+// Hearts the player should try to obtain
 var Heart = function(x, y) {
 	"use strict";
 	this.x = x;
@@ -218,7 +217,7 @@ var Player = function() {
 	this.playerLives = 3;
 };
 // Required method for game
-// Check if playerLives is 0, if yes call reset
+// Check if playerLives is 0, if yes, reset
 Player.prototype.update = function() {
 	"use strict";
 	if (this.playerLives === 0) {
@@ -234,7 +233,7 @@ Player.prototype.characterReset = function() {
 	this.x = this.startingX;
 	this.y = this.startingY;
 };
-// Increase score and increase difficulty when player reaches top of water
+// Increase score and increase difficulty when player reaches water
 Player.prototype.success = function() {
 	"use strict";
 	this.playerScore += 20;
