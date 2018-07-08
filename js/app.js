@@ -247,6 +247,7 @@ Player.prototype.render = function() {
 	ctx.drawImage(Resources.get(this.sprite), this.x, this.y);
 };
 // Move the player according to keys pressed
+//https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/switch
 Player.prototype.handleInput = function(allowedKeys) {
 	"use strict";
 	switch (allowedKeys) {
