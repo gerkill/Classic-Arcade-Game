@@ -217,15 +217,19 @@ var Player = function() {
 	this.playerLives = 3;
 };
 // Required method for game
-// Check if playerLives is 0, if yes, reset
-// When player reaches water, reset
+// Check if playerLives is 0, if yes call reset
 Player.prototype.update = function() {
-	"use strict";
-	if (this.playerLives === 0) {
-		// clearTimeout(heart.heartWaitTime);
-		reset();
-	}
-	
+    "use strict";
+    if (this.playerLives === 0) {
+    // clearTimeout(heart.heartWaitTime);
+    reset();
+    }
+    if (this.y<0) {
+    this.playerScore += 20;
+    speedMultiplier += 5;
+    this.characterReset();
+    }
+
 };
 // Resets the player position to the start position
 Player.prototype.characterReset = function() {
